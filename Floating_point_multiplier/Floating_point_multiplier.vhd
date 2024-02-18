@@ -1,0 +1,128 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity Floating_point_multiplier is
+	Generic(N : natural := 8;
+			  MANTISSA_WIDTH : natural := 4
+	);
+	
+	Port(
+			A : in std_logic_vector(N-1 DOWNTO 0);
+			B : in std_logic_vector(N-1 DOWNTO 0);
+			P : out std_logic_vector(N-1 DOWNTO 0);
+			CLK : in std_logic;
+			RST : in std_logic;
+			LOAD_DATA : in std_logic;
+			IS_READY : out std_logic
+	);
+end Floating_point_multiplier;
+
+
+architecture Behavioral of Floating_point_multiplier is
+-- STATE DECLARE
+	TYPE ST IS (Initialize, Calculate, Normalize, Mantissa_Rounding, Final);
+	SIGNAL state : ST;
+
+
+-- CONSTANTS DECLARE
+   CONSTANT MANTISSA_HIGH_INDEX : INTEGER := MANTISSA_WIDTH-1;
+	CONSTANT EXPONENT_WIDTH : INTEGER := A(N-2 DOWNTO MANTISSA_HIGH_INDEX+1)'length;
+	CONSTANT EXPONENT_HIGH_INDEX : INTEGER := A(N-2 DOWNTO MANTISSA_HIGH_INDEX+1)'high;
+
+	CONSTANT BIAS_NUMBER : INTEGER := 2**(EXPONENT_WIDTH-1)-1; -- 2^(N-1)-1
+	
+-- SIGNALS DECLARE 
+	SIGNAL A_sgn : STD_LOGIC;
+	SIGNAL A_exp : STD_LOGIC_VECTOR(EXPONENT_WIDTH-1 DOWNTO 0);
+	SIGNAL A_mantissa : STD_LOGIC_VECTOR(MANTISSA_WIDTH-1 DOWNTO 0);
+	
+	SIGNAL B_sgn : STD_LOGIC;
+	SIGNAL B_exp : STD_LOGIC_VECTOR(EXPONENT_WIDTH-1 DOWNTO 0);
+	SIGNAL B_mantissa : STD_LOGIC_VECTOR(MANTISSA_WIDTH-1 DOWNTO 0);
+	
+	SIGNAL multiply_result_temp : STD_LOGIC_VECTOR((2*MANTISSA_WIDTH+2)-1 DOWNTO 0); -- 10 bit for storing mantisaa's multiplication result and two '1' as extra bits 
+	SIGNAL multiply_result 		 : STD_LOGIC_VECTOR((2*MANTISSA_WIDTH)-1 DOWNTO 0); -- 8 bit for storing final result after remove two first bits
+	
+	SIGNAL auxP : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	
+	SIGNAL IS_READY_Signal : STD_LOGIC;
+
+SIGNAL DEBUG_FLAG : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00";	
+begin
+
+IS_READY <= IS_READY_Signal;
+P <= auxP WHEN IS_READY_Signal = '1' ELSE (OTHERS => '0');
+
+	process(RST, CLK)
+	begin
+		
+		if (RST = '0') then
+			state <= Initialize;
+			IS_READY_Signal <= '0';
+			
+			DEBUG_FLAG <= "00";
+			
+		elsif (rising_edge(CLK)) then
+		
+			CASE state IS
+			
+				WHEN Initialize =>
+					if (LOAD_DATA = '1') then
+						A_sgn      <= A(N-1);
+						A_exp 	  <= A(EXPONENT_HIGH_INDEX DOWNTO MANTISSA_HIGH_INDEX+1);
+						A_mantissa <= A(MANTISSA_HIGH_INDEX DOWNTO 0);
+						
+						B_sgn      <= B(N-1);
+						B_exp 	  <= B(EXPONENT_HIGH_INDEX DOWNTO MANTISSA_HIGH_INDEX+1);
+						B_mantissa <= B(MANTISSA_HIGH_INDEX DOWNTO 0);
+						
+						state <= Initialize;
+					elsif (LOAD_DATA = '0') then
+						state <= Calculate;
+					end if;
+					
+				WHEN Calculate =>
+						if(A_mantissa = (A_mantissa'range => '0') OR B_mantissa = (B_mantissa'range => '0')) then -- Check zero vector
+							IS_READY_Signal <= '1';
+							if (LOAD_DATA = '1') then
+								IS_READY_Signal <= '0';
+								state <= Initialize;
+							end if;						
+						
+						
+						else
+						A_exp <= std_logic_vector((unsigned(A_exp) + unsigned(B_exp)) - to_unsigned(BIAS_NUMBER, A_exp'length));
+						
+						-- Shift right and add '1' as msb to both numbers to have a valid result after multiplication
+						multiply_result_temp <= std_logic_vector(unsigned('1' & A_mantissa(MANTISSA_HIGH_INDEX DOWNTO 0)) * unsigned('1' & B_mantissa(MANTISSA_HIGH_INDEX DOWNTO 0)));
+						state <= Normalize;
+						end if;
+						
+				WHEN Normalize =>
+				multiply_result <= multiply_result_temp((multiply_result_temp'high-2) DOWNTO 0); -- remove two bits from left
+				state <= Mantissa_Rounding;
+				
+				WHEN Mantissa_Rounding =>
+					if (multiply_result(MANTISSA_HIGH_INDEX) = '1' ) then -- addition multiply result by 1 to round final number
+						-- remove first bit to get the correct answer
+						A_mantissa <= std_logic_vector(unsigned(multiply_result((multiply_result'high) DOWNTO MANTISSA_HIGH_INDEX+1)) + to_unsigned(1, MANTISSA_WIDTH));
+					end if;
+					state <= Final;
+					
+				WHEN Final =>
+					auxP(N-1) <= A_sgn XOR B_sgn; -- if a and b sign equal, the final sign: 0, otherwise: 1
+					auxP(EXPONENT_HIGH_INDEX DOWNTO MANTISSA_HIGH_INDEX+1) <= A_exp;
+					auxP(MANTISSA_HIGH_INDEX DOWNTO 0) <= A_mantissa;
+					IS_READY_Signal <= '1';
+					
+					if (LOAD_DATA = '1') then
+						IS_READY_Signal <= '0';
+						state <= Initialize;
+					end if;
+			END CASE;
+		end if;
+	end process;
+
+end Behavioral;

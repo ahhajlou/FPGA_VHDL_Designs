@@ -1,0 +1,246 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim
+Efloating_point_adder_main
+Z1 w1640467774
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd
+Z6 FE:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd
+l0
+L6
+VKCBTgm9K4^ACPCDNUn@Aa0
+!s100 Xo@`W=ke;=M7[h?0CZZ3L0
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1640472381
+!i10b 1
+Z9 !s108 1640472381.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd|
+Z11 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 25 floating_point_adder_main 0 22 KCBTgm9K4^ACPCDNUn@Aa0
+l99
+L23
+V<Gfm3N0mA@o99JifaV@dd1
+!s100 <n4M1C;C4a9zEQJHWQZ8N0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efloating_point_adder_main_vhd_tst
+Z14 w1640472372
+R3
+R4
+R0
+Z15 8E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht
+Z16 FE:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht
+l0
+L30
+V3W2NkAH]YHZaoYPnl8R?z3
+!s100 D]WVMQ2[KIoTIWG2cQ64S2
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht|
+Z18 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht|
+!i113 1
+R12
+R13
+Afloating_point_adder_main_arch
+R3
+R4
+Z19 DEx4 work 33 floating_point_adder_main_vhd_tst 0 22 3W2NkAH]YHZaoYPnl8R?z3
+l56
+L32
+V5z5B?KDQig:VKK>59SDNB3
+!s100 [D2iQ<8mRA84Jol=5Iz<V3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Efulladder_exponent
+Z20 w1640467870
+R3
+R4
+R0
+Z21 8E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Exponent.vhd
+Z22 FE:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Exponent.vhd
+l0
+L4
+VB2gKffa6Rj7ET27:@N_Ci0
+!s100 b;1dbP:5o8GC;9K^6S1140
+R7
+31
+Z23 !s110 1640472232
+!i10b 1
+Z24 !s108 1640472232.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Exponent.vhd|
+Z26 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Exponent.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 18 fulladder_exponent 0 22 B2gKffa6Rj7ET27:@N_Ci0
+l32
+L17
+VNhnbUn_3kIk?YcDgClNh=1
+!s100 akoCK=aWnMLP1k`DD6OIc3
+R7
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13
+Efulladder_mantissa
+Z27 w1640467912
+R3
+R4
+R0
+Z28 8E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Mantissa.vhd
+Z29 FE:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Mantissa.vhd
+l0
+L4
+VhAW7lM[_L?a55AK=HJZ3>3
+!s100 e;LG]PBCMeOkfhP5XGMjo0
+R7
+31
+Z30 !s110 1640472233
+!i10b 1
+R24
+Z31 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Mantissa.vhd|
+Z32 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Mantissa.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 18 fulladder_mantissa 0 22 hAW7lM[_L?a55AK=HJZ3>3
+l34
+L19
+VR3onWd^1Vd3_CD=C8bPc40
+!s100 ]]ZQU3IU?E4MNP7j3mf@13
+R7
+31
+R30
+!i10b 1
+R24
+R31
+R32
+!i113 1
+R12
+R13
+Efulladder_sub_module
+Z33 w1640467829
+R3
+R4
+R0
+Z34 8E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Sub_Module.vhd
+Z35 FE:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Sub_Module.vhd
+l0
+L4
+VCX5PjoMhhM^QG7nKR23Fg2
+!s100 51@IP`Jbb0i;NL^Em`TX;0
+R7
+31
+R23
+!i10b 1
+R24
+Z36 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Sub_Module.vhd|
+Z37 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Sub_Module.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 20 fulladder_sub_module 0 22 CX5PjoMhhM^QG7nKR23Fg2
+l18
+L16
+VTVDR>NKOdU?=@jz?iT1aC2
+!s100 hTIQgom45bk;8F2@9MkR]3
+R7
+31
+R23
+!i10b 1
+R24
+R36
+R37
+!i113 1
+R12
+R13
+Eshift_right_left
+Z38 w1640467956
+R3
+R4
+R0
+Z39 8E:/FPGA_Project/Midterm_Project/Floating_point_adder/Shift_right_left.vhd
+Z40 FE:/FPGA_Project/Midterm_Project/Floating_point_adder/Shift_right_left.vhd
+l0
+L5
+VhNOCNK]0gz<kP>RX;EE?b0
+!s100 B_j:Pb96ZPce7]PD[>h8h0
+R7
+31
+R30
+!i10b 1
+Z41 !s108 1640472233.000000
+Z42 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_adder/Shift_right_left.vhd|
+Z43 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_adder/Shift_right_left.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 16 shift_right_left 0 22 hNOCNK]0gz<kP>RX;EE?b0
+l17
+L16
+V]ZTn@=cm0gfGXfB08jQn?2
+!s100 4>5E;Xb>KL?z?>IUUYmcV2
+R7
+31
+R30
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R12
+R13

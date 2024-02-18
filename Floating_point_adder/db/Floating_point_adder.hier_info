@@ -1,0 +1,317 @@
+|Floating_point_adder_main
+a[0] => A_mantissa.DATAB
+a[0] => B_mantissa.DATAB
+a[1] => A_mantissa.DATAB
+a[1] => B_mantissa.DATAB
+a[2] => A_mantissa.DATAB
+a[2] => B_mantissa.DATAB
+a[3] => A_mantissa.DATAB
+a[3] => B_mantissa.DATAB
+a[4] => auxA.DATAB
+a[4] => A_exp.DATAB
+a[4] => B_exp.DATAB
+a[5] => auxA.DATAB
+a[5] => A_exp.DATAB
+a[5] => B_exp.DATAB
+a[6] => auxA.DATAB
+a[6] => A_exp.DATAB
+a[6] => B_exp.DATAB
+a[7] => A_sgn.DATAB
+a[7] => B_sgn.DATAB
+b[0] => A_mantissa.DATAB
+b[0] => B_mantissa.DATAB
+b[1] => A_mantissa.DATAB
+b[1] => B_mantissa.DATAB
+b[2] => A_mantissa.DATAB
+b[2] => B_mantissa.DATAB
+b[3] => A_mantissa.DATAB
+b[3] => B_mantissa.DATAB
+b[4] => auxB.DATAB
+b[4] => A_exp.DATAB
+b[4] => B_exp.DATAB
+b[5] => auxB.DATAB
+b[5] => A_exp.DATAB
+b[5] => B_exp.DATAB
+b[6] => auxB.DATAB
+b[6] => A_exp.DATAB
+b[6] => B_exp.DATAB
+b[7] => A_sgn.DATAB
+b[7] => B_sgn.DATAB
+RST => shiftLeft_Flag.ACLR
+RST => IS_READY_Signal.ACLR
+RST => auxResult[0].ACLR
+RST => auxResult[1].ACLR
+RST => auxResult[2].ACLR
+RST => auxResult[3].ACLR
+RST => auxResult[4].ACLR
+RST => auxResult[5].ACLR
+RST => auxResult[6].ACLR
+RST => auxResult[7].ACLR
+RST => B_mantissa[0].ACLR
+RST => B_mantissa[1].ACLR
+RST => B_mantissa[2].ACLR
+RST => B_mantissa[3].ACLR
+RST => B_mantissa[4].ACLR
+RST => A_mantissa[0].ACLR
+RST => A_mantissa[1].ACLR
+RST => A_mantissa[2].ACLR
+RST => A_mantissa[3].ACLR
+RST => A_mantissa[4].ACLR
+RST => B_exp[0].ACLR
+RST => B_exp[1].ACLR
+RST => B_exp[2].ACLR
+RST => A_exp[0].ACLR
+RST => A_exp[1].ACLR
+RST => A_exp[2].ACLR
+RST => B_sgn.ACLR
+RST => A_sgn.ACLR
+RST => auxB[4].ACLR
+RST => auxB[5].ACLR
+RST => auxB[6].ACLR
+RST => auxA[4].ACLR
+RST => auxA[5].ACLR
+RST => auxA[6].ACLR
+RST => state~10.DATAIN
+CLK => shiftLeft_Flag.CLK
+CLK => IS_READY_Signal.CLK
+CLK => auxResult[0].CLK
+CLK => auxResult[1].CLK
+CLK => auxResult[2].CLK
+CLK => auxResult[3].CLK
+CLK => auxResult[4].CLK
+CLK => auxResult[5].CLK
+CLK => auxResult[6].CLK
+CLK => auxResult[7].CLK
+CLK => B_mantissa[0].CLK
+CLK => B_mantissa[1].CLK
+CLK => B_mantissa[2].CLK
+CLK => B_mantissa[3].CLK
+CLK => B_mantissa[4].CLK
+CLK => A_mantissa[0].CLK
+CLK => A_mantissa[1].CLK
+CLK => A_mantissa[2].CLK
+CLK => A_mantissa[3].CLK
+CLK => A_mantissa[4].CLK
+CLK => B_exp[0].CLK
+CLK => B_exp[1].CLK
+CLK => B_exp[2].CLK
+CLK => A_exp[0].CLK
+CLK => A_exp[1].CLK
+CLK => A_exp[2].CLK
+CLK => B_sgn.CLK
+CLK => A_sgn.CLK
+CLK => auxB[4].CLK
+CLK => auxB[5].CLK
+CLK => auxB[6].CLK
+CLK => auxA[4].CLK
+CLK => auxA[5].CLK
+CLK => auxA[6].CLK
+CLK => state~8.DATAIN
+LOAD_DATA => auxA.OUTPUTSELECT
+LOAD_DATA => auxA.OUTPUTSELECT
+LOAD_DATA => auxA.OUTPUTSELECT
+LOAD_DATA => auxB.OUTPUTSELECT
+LOAD_DATA => auxB.OUTPUTSELECT
+LOAD_DATA => auxB.OUTPUTSELECT
+LOAD_DATA => shiftLeft_Flag.OUTPUTSELECT
+LOAD_DATA => state.OUTPUTSELECT
+LOAD_DATA => state.OUTPUTSELECT
+LOAD_DATA => state.OUTPUTSELECT
+LOAD_DATA => state.OUTPUTSELECT
+LOAD_DATA => state.OUTPUTSELECT
+LOAD_DATA => state.OUTPUTSELECT
+LOAD_DATA => state.OUTPUTSELECT
+LOAD_DATA => Selector0.IN4
+LOAD_DATA => Selector1.IN2
+LOAD_DATA => IS_READY_Signal.DATAIN
+IS_SUM => SumEqSign_OR_SubDiffSign.IN1
+IS_SUM => SumEqSign_OR_SubDiffSign.IN1
+Result[0] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[1] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[5] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[6] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[7] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+IS_Ready <= IS_READY_Signal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Exponent:adder_exp
+a[0] => FullAdder_Sub_Module:FullAdder:0:Adder.a
+a[1] => FullAdder_Sub_Module:FullAdder:1:Adder.a
+a[2] => FullAdder_Sub_Module:FullAdder:2:Adder.a
+b[0] => B_XOR_M[0].IN0
+b[1] => B_XOR_M[1].IN0
+b[2] => B_XOR_M[2].IN0
+M => B_XOR_M[0].IN1
+M => B_XOR_M[1].IN1
+M => B_XOR_M[2].IN1
+M => FullAdder_Sub_Module:FullAdder:0:Adder.Cin
+Sum[0] <= FullAdder_Sub_Module:FullAdder:0:Adder.Sum
+Sum[1] <= FullAdder_Sub_Module:FullAdder:1:Adder.Sum
+Sum[2] <= FullAdder_Sub_Module:FullAdder:2:Adder.Sum
+
+
+|Floating_point_adder_main|FullAdder_Exponent:adder_exp|FullAdder_Sub_Module:\FullAdder:0:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Exponent:adder_exp|FullAdder_Sub_Module:\FullAdder:1:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Exponent:adder_exp|FullAdder_Sub_Module:\FullAdder:2:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Mantissa:adder_mantissa
+a[0] => FullAdder_Sub_Module:FullAdder:0:Adder.a
+a[1] => FullAdder_Sub_Module:FullAdder:1:Adder.a
+a[2] => FullAdder_Sub_Module:FullAdder:2:Adder.a
+a[3] => FullAdder_Sub_Module:FullAdder:3:Adder.a
+a[4] => FullAdder_Sub_Module:FullAdder:4:Adder.a
+b[0] => B_XOR_M[0].IN0
+b[1] => B_XOR_M[1].IN0
+b[2] => B_XOR_M[2].IN0
+b[3] => B_XOR_M[3].IN0
+b[4] => B_XOR_M[4].IN0
+M => B_XOR_M[0].IN1
+M => B_XOR_M[1].IN1
+M => B_XOR_M[2].IN1
+M => B_XOR_M[3].IN1
+M => B_XOR_M[4].IN1
+M => FullAdder_Sub_Module:FullAdder:0:Adder.Cin
+Sum[0] <= FullAdder_Sub_Module:FullAdder:0:Adder.Sum
+Sum[1] <= FullAdder_Sub_Module:FullAdder:1:Adder.Sum
+Sum[2] <= FullAdder_Sub_Module:FullAdder:2:Adder.Sum
+Sum[3] <= FullAdder_Sub_Module:FullAdder:3:Adder.Sum
+Sum[4] <= FullAdder_Sub_Module:FullAdder:4:Adder.Sum
+Cout <= FullAdder_Sub_Module:FullAdder:4:Adder.Cout
+Overflow <= Overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Mantissa:adder_mantissa|FullAdder_Sub_Module:\FullAdder:0:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Mantissa:adder_mantissa|FullAdder_Sub_Module:\FullAdder:1:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Mantissa:adder_mantissa|FullAdder_Sub_Module:\FullAdder:2:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Mantissa:adder_mantissa|FullAdder_Sub_Module:\FullAdder:3:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|FullAdder_Mantissa:adder_mantissa|FullAdder_Sub_Module:\FullAdder:4:Adder
+a => Sum.IN0
+a => Cout.IN0
+a => Cout.IN0
+b => Sum.IN1
+b => Cout.IN1
+b => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Floating_point_adder_main|Shift_right_left:Shift_Component
+Shift_direction => Selector0.IN3
+Shift_direction => Selector1.IN3
+Shift_direction => Selector2.IN3
+Shift_direction => Shift_out.OUTPUTSELECT
+Shift_direction => Shift_out.OUTPUTSELECT
+Shift_direction => Selector0.IN1
+Shift_direction => Selector1.IN1
+Shift_direction => Selector2.IN1
+Shift_in[0] => Selector2.IN5
+Shift_in[1] => Selector1.IN5
+Shift_in[1] => Shift_out.DATAB
+Shift_in[2] => Selector0.IN5
+Shift_in[2] => Selector2.IN4
+Shift_in[3] => Shift_out.DATAB
+Shift_in[3] => Selector1.IN4
+Shift_in[4] => Selector0.IN4
+Shift_out[0] <= Shift_out.DB_MAX_OUTPUT_PORT_TYPE
+Shift_out[1] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+Shift_out[2] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+Shift_out[3] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+Shift_out[4] <= Shift_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

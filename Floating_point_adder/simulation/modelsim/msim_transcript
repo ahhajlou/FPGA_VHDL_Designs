@@ -1,0 +1,196 @@
+# Reading E:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Floating_point_adder_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:13:52 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_adder_main
+# -- Compiling architecture Behavioral of Floating_point_adder_main
+# End time: 02:13:52 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Sub_Module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:13:52 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Sub_Module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder_Sub_Module
+# -- Compiling architecture Behavioral of FullAdder_Sub_Module
+# End time: 02:13:52 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Exponent.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:13:52 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Exponent.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder_Exponent
+# -- Compiling architecture Behavioral of FullAdder_Exponent
+# End time: 02:13:52 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Mantissa.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:13:52 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/FullAdder_Mantissa.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder_Mantissa
+# -- Compiling architecture Behavioral of FullAdder_Mantissa
+# End time: 02:13:53 on Dec 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_adder/Shift_right_left.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:13:53 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/Shift_right_left.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Shift_right_left
+# -- Compiling architecture Behavioral of Shift_right_left
+# End time: 02:13:53 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:13:53 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_adder_main_vhd_tst
+# -- Compiling architecture Floating_point_adder_main_arch of Floating_point_adder_main_vhd_tst
+# End time: 02:13:53 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Floating_point_adder_testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Floating_point_adder_testbench 
+# Start time: 02:13:54 on Dec 26,2021
+# ** Error: (vsim-3170) Could not find 'Floating_point_adder_testbench'.
+#         Searched libraries:
+#             E:/intelFPGA/18.1/modelsim_ase/altera/vhdl/altera
+#             E:/intelFPGA/18.1/modelsim_ase/altera/vhdl/220model
+#             E:/intelFPGA/18.1/modelsim_ase/altera/vhdl/sgate
+#             E:/intelFPGA/18.1/modelsim_ase/altera/vhdl/altera_mf
+#             E:/intelFPGA/18.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             E:/intelFPGA/18.1/modelsim_ase/altera/vhdl/cyclonev
+#             E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/rtl_work
+#             E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Floating_point_adder_run_msim_rtl_vhdl.do PAUSED at line 16
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:14:02 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_adder_main
+# -- Compiling architecture Behavioral of Floating_point_adder_main
+# End time: 02:14:02 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:14:02 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_adder_main_vhd_tst
+# -- Compiling architecture Floating_point_adder_main_arch of Floating_point_adder_main_vhd_tst
+# End time: 02:14:02 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=\"+acc\" work.floating_point_adder_main_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" work.floating_point_adder_main_vhd_tst 
+# Start time: 02:13:54 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.floating_point_adder_main_vhd_tst(floating_point_adder_main_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_adder_main(behavioral)
+# Loading work.fulladder_exponent(behavioral)
+# Loading work.fulladder_sub_module(behavioral)
+# Loading work.fulladder_mantissa(behavioral)
+# Loading work.shift_right_left(behavioral)
+add wave  \
+sim:/floating_point_adder_main_vhd_tst/CLK \
+sim:/floating_point_adder_main_vhd_tst/IS_Ready \
+sim:/floating_point_adder_main_vhd_tst/IS_SUM \
+sim:/floating_point_adder_main_vhd_tst/LOAD_DATA \
+sim:/floating_point_adder_main_vhd_tst/RST \
+sim:/floating_point_adder_main_vhd_tst/Result \
+sim:/floating_point_adder_main_vhd_tst/T \
+sim:/floating_point_adder_main_vhd_tst/a \
+sim:/floating_point_adder_main_vhd_tst/b
+run -all
+# Break key hit
+# Break in Process always at E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht line 95
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:16:21 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/Floating_point_adder_main.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_adder_main
+# -- Compiling architecture Behavioral of Floating_point_adder_main
+# End time: 02:16:21 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:16:21 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_adder/simulation/modelsim/Floating_point_adder_main.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_adder_main_vhd_tst
+# -- Compiling architecture Floating_point_adder_main_arch of Floating_point_adder_main_vhd_tst
+# End time: 02:16:21 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=\"+acc\" work.floating_point_adder_main_vhd_tst
+# End time: 02:16:30 on Dec 26,2021, Elapsed time: 0:02:36
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" work.floating_point_adder_main_vhd_tst 
+# Start time: 02:16:31 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.floating_point_adder_main_vhd_tst(floating_point_adder_main_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_adder_main(behavioral)
+# Loading work.fulladder_exponent(behavioral)
+# Loading work.fulladder_sub_module(behavioral)
+# Loading work.fulladder_mantissa(behavioral)
+# Loading work.shift_right_left(behavioral)
+add wave  \
+sim:/floating_point_adder_main_vhd_tst/CLK \
+sim:/floating_point_adder_main_vhd_tst/IS_Ready \
+sim:/floating_point_adder_main_vhd_tst/IS_SUM \
+sim:/floating_point_adder_main_vhd_tst/LOAD_DATA \
+sim:/floating_point_adder_main_vhd_tst/RST \
+sim:/floating_point_adder_main_vhd_tst/Result \
+sim:/floating_point_adder_main_vhd_tst/T \
+sim:/floating_point_adder_main_vhd_tst/a \
+sim:/floating_point_adder_main_vhd_tst/b
+run -all

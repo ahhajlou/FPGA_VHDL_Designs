@@ -1,0 +1,8 @@
+
+State Machine - |Floating_point_multiplier|state
+Name state.Final state.Mantissa_Rounding state.Normalize state.Calculate state.Initialize 
+state.Initialize 0 0 0 0 0 
+state.Calculate 0 0 0 1 1 
+state.Normalize 0 0 1 0 1 
+state.Mantissa_Rounding 0 1 0 0 1 
+state.Final 1 0 0 0 1 

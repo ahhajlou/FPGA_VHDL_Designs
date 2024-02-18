@@ -1,0 +1,370 @@
+# Reading E:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Floating_point_multiplier_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:05 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_multiplier
+# -- Compiling architecture Behavioral of Floating_point_multiplier
+# End time: 02:29:05 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:05 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_multiplier_vhd_tst
+# -- Compiling architecture Floating_point_multiplier_arch of Floating_point_multiplier_vhd_tst
+# ** Error: E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht(83): near "WAIT": (vcom-1576) expecting ';'.
+# ** Error: E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht(99): VHDL Compiler exiting
+# End time: 02:29:06 on Dec 26,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: E:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./Floating_point_multiplier_run_msim_rtl_vhdl.do line 10
+# E:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht}"
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:19 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_multiplier
+# -- Compiling architecture Behavioral of Floating_point_multiplier
+# End time: 02:29:19 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:19 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_multiplier_vhd_tst
+# -- Compiling architecture Floating_point_multiplier_arch of Floating_point_multiplier_vhd_tst
+# ** Error: E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht(83): near "WAIT": (vcom-1576) expecting ';'.
+# ** Error: E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht(99): VHDL Compiler exiting
+# End time: 02:29:19 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# E:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:38 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_multiplier
+# -- Compiling architecture Behavioral of Floating_point_multiplier
+# End time: 02:29:38 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:38 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_multiplier_vhd_tst
+# -- Compiling architecture Floating_point_multiplier_arch of Floating_point_multiplier_vhd_tst
+# End time: 02:29:38 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.floating_point_multiplier_vhd_tst
+# vsim -gui -l msim_transcript work.floating_point_multiplier_vhd_tst 
+# Start time: 02:29:47 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_multiplier(behavioral)
+add dataflow  \
+sim:/floating_point_multiplier_vhd_tst/A \
+sim:/floating_point_multiplier_vhd_tst/B \
+sim:/floating_point_multiplier_vhd_tst/CLK \
+sim:/floating_point_multiplier_vhd_tst/IS_READY \
+sim:/floating_point_multiplier_vhd_tst/LOAD_DATA \
+sim:/floating_point_multiplier_vhd_tst/P \
+sim:/floating_point_multiplier_vhd_tst/RST \
+sim:/floating_point_multiplier_vhd_tst/T
+# WARNING: No extended dataflow license exists
+add wave  \
+sim:/floating_point_multiplier_vhd_tst/A \
+sim:/floating_point_multiplier_vhd_tst/B \
+sim:/floating_point_multiplier_vhd_tst/CLK \
+sim:/floating_point_multiplier_vhd_tst/IS_READY \
+sim:/floating_point_multiplier_vhd_tst/LOAD_DATA \
+sim:/floating_point_multiplier_vhd_tst/P \
+sim:/floating_point_multiplier_vhd_tst/RST \
+sim:/floating_point_multiplier_vhd_tst/T
+# No drivers or ports for A
+# No drivers or ports for B
+# No drivers or ports for CLK
+# No drivers or ports for IS_READY
+# No drivers or ports for LOAD_DATA
+# No drivers or ports for P
+# No drivers or ports for RST
+run -all
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:33:57 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_multiplier
+# -- Compiling architecture Behavioral of Floating_point_multiplier
+# End time: 02:33:57 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:33:57 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_multiplier_vhd_tst
+# -- Compiling architecture Floating_point_multiplier_arch of Floating_point_multiplier_vhd_tst
+# End time: 02:33:57 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# End time: 02:34:02 on Dec 26,2021, Elapsed time: 0:04:15
+# Errors: 0, Warnings: 8
+# vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch) 
+# Start time: 02:34:02 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_multiplier(behavioral)
+add wave  \
+sim:/floating_point_multiplier_vhd_tst/A \
+sim:/floating_point_multiplier_vhd_tst/B \
+sim:/floating_point_multiplier_vhd_tst/CLK \
+sim:/floating_point_multiplier_vhd_tst/IS_READY \
+sim:/floating_point_multiplier_vhd_tst/LOAD_DATA \
+sim:/floating_point_multiplier_vhd_tst/P \
+sim:/floating_point_multiplier_vhd_tst/RST \
+sim:/floating_point_multiplier_vhd_tst/T
+run -all
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:37:29 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_multiplier
+# -- Compiling architecture Behavioral of Floating_point_multiplier
+# End time: 02:37:29 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:37:30 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_multiplier_vhd_tst
+# -- Compiling architecture Floating_point_multiplier_arch of Floating_point_multiplier_vhd_tst
+# End time: 02:37:30 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# End time: 02:37:34 on Dec 26,2021, Elapsed time: 0:03:32
+# Errors: 0, Warnings: 0
+# vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch) 
+# Start time: 02:37:34 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_multiplier(behavioral)
+add dataflow  \
+sim:/floating_point_multiplier_vhd_tst/A \
+sim:/floating_point_multiplier_vhd_tst/B \
+sim:/floating_point_multiplier_vhd_tst/CLK \
+sim:/floating_point_multiplier_vhd_tst/IS_READY \
+sim:/floating_point_multiplier_vhd_tst/LOAD_DATA \
+sim:/floating_point_multiplier_vhd_tst/P \
+sim:/floating_point_multiplier_vhd_tst/RST \
+sim:/floating_point_multiplier_vhd_tst/T
+# WARNING: No extended dataflow license exists
+# No drivers or ports for A
+# No drivers or ports for B
+# No drivers or ports for CLK
+# No drivers or ports for IS_READY
+# No drivers or ports for LOAD_DATA
+# No drivers or ports for P
+# No drivers or ports for RST
+# No drivers or ports for T
+add wave  \
+sim:/floating_point_multiplier_vhd_tst/A \
+sim:/floating_point_multiplier_vhd_tst/B \
+sim:/floating_point_multiplier_vhd_tst/CLK \
+sim:/floating_point_multiplier_vhd_tst/IS_READY \
+sim:/floating_point_multiplier_vhd_tst/LOAD_DATA \
+sim:/floating_point_multiplier_vhd_tst/P \
+sim:/floating_point_multiplier_vhd_tst/RST \
+sim:/floating_point_multiplier_vhd_tst/T
+run -all
+vsim work.floating_point_multiplier(behavioral)
+# End time: 02:41:28 on Dec 26,2021, Elapsed time: 0:03:54
+# Errors: 0, Warnings: 9
+# vsim work.floating_point_multiplier(behavioral) 
+# Start time: 02:41:28 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_multiplier(behavioral)
+add wave  \
+sim:/floating_point_multiplier/A \
+sim:/floating_point_multiplier/A_exp \
+sim:/floating_point_multiplier/A_mantissa \
+sim:/floating_point_multiplier/A_sgn \
+sim:/floating_point_multiplier/B \
+sim:/floating_point_multiplier/BIAS_NUMBER \
+sim:/floating_point_multiplier/B_exp \
+sim:/floating_point_multiplier/B_mantissa \
+sim:/floating_point_multiplier/B_sgn \
+sim:/floating_point_multiplier/CLK \
+sim:/floating_point_multiplier/DEBUG_FLAG \
+sim:/floating_point_multiplier/IS_READY \
+sim:/floating_point_multiplier/LOAD_DATA \
+sim:/floating_point_multiplier/P \
+sim:/floating_point_multiplier/RST \
+sim:/floating_point_multiplier/auxP \
+sim:/floating_point_multiplier/multiply_result \
+sim:/floating_point_multiplier/multiply_result_temp \
+sim:/floating_point_multiplier/state
+force -freeze sim:/floating_point_multiplier/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/floating_point_multiplier/RST 1 0
+force -freeze sim:/floating_point_multiplier/LOAD_DATA 1 0
+force -freeze sim:/floating_point_multiplier/A 00111100 0
+force -freeze sim:/floating_point_multiplier/B 01000001 0
+run
+run
+force -freeze sim:/floating_point_multiplier/LOAD_DATA 0 0
+run
+run
+run
+run
+run
+run
+run
+add wave  \
+sim:/floating_point_multiplier/MANTISSA_HIGH_INDEX
+run
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:39 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_multiplier
+# -- Compiling architecture Behavioral of Floating_point_multiplier
+# End time: 03:02:39 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:39 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_multiplier_vhd_tst
+# -- Compiling architecture Floating_point_multiplier_arch of Floating_point_multiplier_vhd_tst
+# End time: 03:02:40 on Dec 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# End time: 03:02:45 on Dec 26,2021, Elapsed time: 0:21:17
+# Errors: 0, Warnings: 0
+# vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch) 
+# Start time: 03:02:46 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_multiplier(behavioral)
+add wave  \
+sim:/floating_point_multiplier_vhd_tst/A \
+sim:/floating_point_multiplier_vhd_tst/B \
+sim:/floating_point_multiplier_vhd_tst/CLK \
+sim:/floating_point_multiplier_vhd_tst/IS_READY \
+sim:/floating_point_multiplier_vhd_tst/LOAD_DATA \
+sim:/floating_point_multiplier_vhd_tst/P \
+sim:/floating_point_multiplier_vhd_tst/RST \
+sim:/floating_point_multiplier_vhd_tst/T
+run -all
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:06:12 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Floating_point_multiplier
+# -- Compiling architecture Behavioral of Floating_point_multiplier
+# End time: 03:06:13 on Dec 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:06:13 on Dec 26,2021
+# vcom -reportprogress 300 -93 -work work E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Floating_point_multiplier_vhd_tst
+# -- Compiling architecture Floating_point_multiplier_arch of Floating_point_multiplier_vhd_tst
+# End time: 03:06:13 on Dec 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# End time: 03:06:19 on Dec 26,2021, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 0
+# vsim work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch) 
+# Start time: 03:06:21 on Dec 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.floating_point_multiplier_vhd_tst(floating_point_multiplier_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.floating_point_multiplier(behavioral)
+add wave  \
+sim:/floating_point_multiplier_vhd_tst/A \
+sim:/floating_point_multiplier_vhd_tst/B \
+sim:/floating_point_multiplier_vhd_tst/CLK \
+sim:/floating_point_multiplier_vhd_tst/IS_READY \
+sim:/floating_point_multiplier_vhd_tst/LOAD_DATA \
+sim:/floating_point_multiplier_vhd_tst/P \
+sim:/floating_point_multiplier_vhd_tst/RST \
+sim:/floating_point_multiplier_vhd_tst/T
+run -all

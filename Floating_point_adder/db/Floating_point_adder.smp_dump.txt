@@ -1,0 +1,10 @@
+
+State Machine - |Floating_point_adder_main|state
+Name state.Final state.Normalize state.Pre_Normalize state.Mantisaa_adder state.Align state.Swap state.Initialize 
+state.Initialize 0 0 0 0 0 0 0 
+state.Swap 0 0 0 0 0 1 1 
+state.Align 0 0 0 0 1 0 1 
+state.Mantisaa_adder 0 0 0 1 0 0 1 
+state.Pre_Normalize 0 0 1 0 0 0 1 
+state.Normalize 0 1 0 0 0 0 1 
+state.Final 1 0 0 0 0 0 1 

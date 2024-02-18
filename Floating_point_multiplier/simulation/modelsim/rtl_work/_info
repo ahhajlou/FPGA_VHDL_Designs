@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim
+Efloating_point_multiplier
+Z1 w1640475132
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+Z6 FE:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd
+l0
+L6
+VA[d__gnWzf?Di<j]hh_bz2
+!s100 GK6<YUPE>1Q@Y]5[QhBE;3
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1640475373
+!i10b 1
+Z9 !s108 1640475372.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd|
+Z11 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/Floating_point_multiplier.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 25 floating_point_multiplier 0 22 A[d__gnWzf?Di<j]hh_bz2
+l53
+L23
+VJM6:G9`QT0z[C:A:DY[S<1
+!s100 ?G6Q5VD]A37F`8Q;i=m8M2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efloating_point_multiplier_vhd_tst
+Z14 w1640475362
+R3
+R4
+R0
+Z15 8E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+Z16 FE:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht
+l0
+L30
+VV`QW9<gd^Wh4C2N1aLXC;2
+!s100 iMObM^b8C6H5>:OiT:M;g1
+R7
+31
+R8
+!i10b 1
+Z17 !s108 1640475373.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht|
+Z19 !s107 E:/FPGA_Project/Midterm_Project/Floating_point_multiplier/simulation/modelsim/Floating_point_multiplier.vht|
+!i113 1
+R12
+R13
+Afloating_point_multiplier_arch
+R3
+R4
+Z20 DEx4 work 33 floating_point_multiplier_vhd_tst 0 22 V`QW9<gd^Wh4C2N1aLXC;2
+l54
+L32
+VnlJPiQ=6X@9>LodMkW3^V0
+!s100 Og[N[lOR>m8jBZIkWGAn_3
+R7
+31
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
